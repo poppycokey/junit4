@@ -87,7 +87,13 @@ public class BlockJUnit4ClassRunner extends ParentRunner<FrameworkMethod> {
     //
     // Implementation of ParentRunner
     //
-
+    /*
+    * @Description: test注解最终运行方法
+    * @author: aries
+    * @date: 2019-03-01 17:38
+    * @email: zbl686868@126.com
+    * @phone: 17611305537
+    */
     @Override
     protected void runChild(final FrameworkMethod method, RunNotifier notifier) {
         Description description = describeChild(method);
@@ -126,6 +132,13 @@ public class BlockJUnit4ClassRunner extends ParentRunner<FrameworkMethod> {
         return description;
     }
 
+    /*
+    * @Description: 获取测试具体方法
+    * @author: aries
+    * @date: 2019-03-01 17:42
+    * @email: zbl686868@126.com
+    * @phone: 17611305537
+    */
     @Override
     protected List<FrameworkMethod> getChildren() {
         return computeTestMethods();

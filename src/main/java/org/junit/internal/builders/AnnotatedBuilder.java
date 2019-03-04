@@ -68,6 +68,13 @@ import java.lang.reflect.Modifier;
  * @see org.junit.runner.RunWith
  * @since 4.0
  */
+/*
+* @Description: ?????
+* @author: aries
+* @date: 2019-02-22 14:14
+* @email: zbl686868@126.com
+* @phone: 17611305537
+*/
 public class AnnotatedBuilder extends RunnerBuilder {
     private static final String CONSTRUCTOR_ERROR_FORMAT = "Custom runner class %s should have a public constructor with signature %s(Class testClass)";
 

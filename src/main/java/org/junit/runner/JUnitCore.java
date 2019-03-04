@@ -32,6 +32,13 @@ public class JUnitCore {
      *
      * @param args names of classes in which to find tests to run
      */
+    /*
+    * @Description: junit程序入口
+    * @author: aries
+    * @date: 2019-03-01 17:39
+    * @email: zbl686868@126.com
+    * @phone: 17611305537
+    */
     public static void main(String... args) {
         Result result = new JUnitCore().runMain(new RealSystem(), args);
         System.exit(result.wasSuccessful() ? 0 : 1);
