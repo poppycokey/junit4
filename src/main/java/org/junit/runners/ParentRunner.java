@@ -209,6 +209,7 @@ public abstract class ParentRunner<T> extends Runner implements Filterable,
      * @return {@code Statement}
      */
     protected Statement classBlock(final RunNotifier notifier) {
+//      测试方法循环遍历
         Statement statement = childrenInvoker(notifier);
         if (!areAllChildrenIgnored()) {
             statement = withBeforeClasses(statement);
@@ -408,6 +409,7 @@ public abstract class ParentRunner<T> extends Runner implements Filterable,
                 getDescription());
         testNotifier.fireTestSuiteStarted();
         try {
+//          类中方法循环调用classBlock(notifier);
             Statement statement = classBlock(notifier);
             statement.evaluate();
         } catch (AssumptionViolatedException e) {
